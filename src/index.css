@@ -21,5 +21,38 @@ ul {
   li  {
     margin: 0.25rem;
     text-decoration: none;
+
+    a {
+      text-decoration: none;
+    }
+
+  }
+}
+
+.content {
+  color: white;
+  background-color: black;
+}
+
+.bar {
+  background-color: #0282f9;
+}
+
+.main-list {
+  color: white;
+
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    text-decoration: none;
+    color: white;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 }
