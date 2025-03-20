@@ -5,51 +5,74 @@
   font-family: sans-serif;
 }
 
-img {
-  height: 80px;
-  width: 80px;
+header {
+  padding: 10px 0; 
 }
 
-.header {
-  height: 120px;
-
-}
 .container {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+}
+
+.width {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
-ul {
-  display: flex;
-  list-style: none;
-  font-size: 0.65rem;
+img {
+  width: 80px; 
+  height: auto;
+  margin-right: 20px; 
+  }
 
-  li  {
-    margin-left: 2rem;
-    text-decoration: none;
+.top-nav {
+  
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Spazio tra le voci del menu */
+    padding: 0;
+    margin: 0;
+  }
 
-    a {
-      text-decoration: none;
-      color: #484949;
-    }
-
+  li {
+  font-size: 10px;
+  }
+  
+  a {
+  text-decoration: none;
+  color: black;
   }
 }
 
-.content {
-  color: white;
+
+.section1 {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center; 
   background-color: #1c1c1c;
-  height: 130px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
+
+h3 {
+  color: white;
+}
+
 
 .section2 {
   background-color: #0282f9;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .bar {
   background-color: #0282f9;
-  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,7 +132,7 @@ ul {
   }
 }
 
-.footer-links {
+/* .footer-links {
   height: 370px;
   background-image: url(/footer-bg.jpg);
   background-repeat: no-repeat;
@@ -120,6 +143,7 @@ ul {
 
   .col-4 {
     width: calc((100% / 12) * 4);
+    display: flex;
   }
 
   .col-8 {
@@ -146,13 +170,144 @@ ul {
     }
   }
   
+} */
+
+/* .footer-links {
+  height: 370px; 
+  background-image: url(/footer-bg.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px 0;
 }
 
 
-.bottom {
-  height: 110px;
-  background-color: #303030;
+.footer-links .col-4 {
+  width: calc((100% / 12) * 4);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+.footer-links .col-8 {
+  width: calc((100% / 12) * 8);
+}
+
+
+.footer-links ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+
+.footer-links h4 {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+
+.footer-links li a {
+  color: #969796;
+  font-size: 10px;
+  text-decoration: none;
+} */
+
+.d-flex {
+  display: flex;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sotto-container {
+  display: flex;
+  width: 80%;
+ 
+}
+
+.section3 {
+  display: flex;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+  background-image: url(../public/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-around;
+
+  .col1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-link {
+    margin-right: 1rem;
+  }
+  h4 {
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+ .shop {
+      padding-top: 1rem;
+    }
+  li {
+    list-style: none;
+    font-size: 9px;
+    line-height: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  .col-4 {
+    width: calc((100% / 12) * 4);
+  }
+  .col-7 {
+    width: calc((100% / 12) * 7);
+    display: flex;
+    margin-top: -6rem;
+    margin-bottom: -6rem;
+    justify-content: right;
+    z-index: 1;
+
+    img {
+      width: 400px;
+      z-index: 1;
+    }
+
+    
+  }
+
+
+  
+}
+
+.section4 {
+  background-color: #303030 ;
+  z-index: 100;
+  
+}
+.bottom {
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  background-color: #303030;
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+
+  .button {
+    padding-left: 2rem;
+  }
   .signup-btn {
     background-color: #303030;
     padding: 0.5rem;
@@ -160,15 +315,23 @@ ul {
     border: 1px solid #0282f9;
   }
 
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 1rem;
+  }
+
   img {
-    height: 35px;
-    width: 35px;
-    margin-left: 1rem;
+    height: 25px;
+    width: 25px;
+    margin-left: 0.25rem;
   }
 
   span {
     color: #0282f9;
     margin-right: 1rem;
     font-size: 0.9rem;
+    font-weight: bold;
   }
 }

@@ -2,7 +2,7 @@ export default function Main() {
 
     return(
         <>
-        <section >
+        <section className="section1">
             <div className="container content">
                <h3>-- Content goes here --</h3> 
             </div>

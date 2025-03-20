@@ -1,12 +1,13 @@
 export default function Header() {
 
     return(
-            <div className="container header">
-                <div>
-                   <img src="./dc-logo.png" alt="DC Logo" /> 
-                </div>
-                <div>
-                    <nav>
+            <header>
+                <div className="container flex">
+                <div className="width">
+                    <div>
+                        <img src="./dc-logo.png" alt="DC Logo" /> 
+                    </div>
+                    <div className="top-nav">
                          <ul>
                             <li><a href="">CHARACTERS</a></li>
                             <li><a href="">COMICS</a></li>
@@ -19,10 +20,12 @@ export default function Header() {
                             <li><a href="">NEWS</a></li>
                             <li><a href="">SHOP</a></li>
                         </ul>
-                    </nav>
+                    </div>    
+                </div>
                 
-            </div>    
         </div>
+            </header>
+            
     )
 
 }
