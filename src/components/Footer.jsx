@@ -3,10 +3,10 @@ export default function Footer() {
     return(
         <>
         <section>
-            <div className="container">
-            <div>
-                    <h4>DC COMICS</h4>
+            <div className="container footer-links">
+            <nav>
                     <ul>
+                        <h4>DC COMICS</h4>
                         <li><a href="#">Characters</a></li>
                         <li><a href="#">Comics</a></li>
                         <li><a href="#">Movies</a></li>
@@ -15,17 +15,17 @@ export default function Footer() {
                         <li><a href="#">Videos</a></li>
                         <li><a href="#">News</a></li>
                     </ul>
-                </div>
+                </nav>
                 <div>
-                    <h4>SHOP</h4>
                     <ul>
+                        <h4>SHOP</h4>
                         <li><a href="#">Shop DC</a></li>
                         <li><a href="#">Shop DC Collectibles</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4>DC</h4>
                     <ul>
+                    <h4>DC</h4>
                         <li><a href="#">Terms Of Use</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Ad Choices</a></li>
@@ -38,20 +38,20 @@ export default function Footer() {
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4>SITES</h4>
+                <nav>
                     <ul>
+                      <h4>SITES</h4>
                         <li><a href="#">DC</a></li>
                         <li><a href="#">MAD Magazine</a></li>
                         <li><a href="#">DC Kids</a></li>
                         <li><a href="#">DC Universe</a></li>
                         <li><a href="#">DC Power Visa</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </section>
         <section>
-            <div class="container">
+            <div class="container bottom">
                 <button class="signup-btn">SIGN-UP NOW!</button>
                 <div class="social-links">
                     <span>FOLLOW US</span>

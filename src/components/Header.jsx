@@ -1,10 +1,9 @@
 export default function Header() {
 
     return(
-            <div className="container">
+            <div className="container header">
                 <div>
-                   <img src="/dc-comics-1/dc-logo.png" alt="" />
-                <h3>logo</h3> 
+                   <img src="/dc-logo.png" alt="DC Logo" /> 
                 </div>
                 <div>
                     <nav>

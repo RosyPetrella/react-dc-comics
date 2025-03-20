@@ -4,7 +4,7 @@ export default function Main() {
         <>
         <section >
             <div className="container content">
-               <h3>-- Content goes here--</h3> 
+               <h3>-- Content goes here --</h3> 
             </div>
             
         </section>
