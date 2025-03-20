@@ -52,7 +52,8 @@ export default function Footer() {
         </section>
         <section>
             <div class="container bottom">
-                <button class="signup-btn">SIGN-UP NOW!</button>
+                <div className="col-3">
+                    <button class="signup-btn">SIGN-UP NOW!</button>
                 <div class="social-links">
                     <span>FOLLOW US</span>
                     <a href="#"><img src="" alt="Facebook"/></a>
@@ -61,6 +62,11 @@ export default function Footer() {
                     <a href="#"><img src="" alt="Pinterest"/></a>
                     <a href="#"><img src="" alt="Location"/></a>
                 </div>
+                </div>
+                <div className="col-9">
+
+                </div>
+                
             </div>
         </section>
         </>

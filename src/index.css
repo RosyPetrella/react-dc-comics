@@ -43,10 +43,42 @@ ul {
   height: 130px;
 }
 
+.section2 {
+  background-color: #0282f9;
+}
+
 .bar {
   background-color: #0282f9;
   height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto; 
+  gap: 10px; 
+  flex-wrap: nowrap;
 }
+
+.col {
+  width: calc((100% / 12) * 3);
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  img {
+  width: 50px;
+  height: auto;
+  margin-right: 1rem;
+  }
+
+  span {
+  margin-top: 5px;
+  color: white;
+  font-size: 9px;
+  
+  }
+}
+
 
 .main-list {
   color: white;
@@ -55,6 +87,13 @@ ul {
   ul {
     list-style: none;
     font-size: 11px;
+
+    img {
+      
+      width: 40px;
+      height: 40px;
+      margin-right: 1rem;
+    }
   }
 
 
@@ -72,7 +111,7 @@ ul {
 
 .footer-links {
   height: 370px;
-  background-image: url(./public/footer-bg.jpg);
+  background-image: url(/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
