@@ -1,8 +1,10 @@
+import ListComponent from "./ListComponent"
 export default function Main() {
 
     return(
         <>
-        <section className="section1">
+        <ListComponent />
+        {/* <section className="section1">
             <div className="container1">
 
                 
@@ -117,7 +119,7 @@ export default function Main() {
 
             </div>
 
-        </section>
+        </section> */}
         <section className="section2">
             <div className="container bar">
         
