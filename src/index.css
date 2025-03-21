@@ -52,7 +52,13 @@ img {
   }
 }
 
-
+/* JUMBOTRON */
+.jumbotron {
+  background-image: url(/public/jumbotron.jpg);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* MAIN */
 .section1 {
@@ -74,7 +80,7 @@ img {
   }
 
   .col-2 {
-    width: calc((100% / 12)* 2);
+    width: calc(((100% / 12)* 2) - 15px);
   }
 
   .img-container {
