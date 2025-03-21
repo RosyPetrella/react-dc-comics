@@ -5,6 +5,8 @@
   font-family: sans-serif;
 }
 
+/* HEADER */
+
 header {
   padding: 10px 0; 
 }
@@ -51,13 +53,38 @@ img {
 }
 
 
+
+/* MAIN */
 .section1 {
   display: flex;
   justify-content: flex-start; 
   align-items: center; 
-  background-color: #1c1c1c;
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 3rem; 
+  background-image: url(/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.col-2 {
+  width: calc((100% / 12)* 2);
+  
+}
+.card {
+  width: 100%;
+  img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
 }
 
 h3 {
@@ -238,7 +265,7 @@ h3 {
   display: flex;
   padding-top: 2.5rem;
   padding-bottom: 3rem;
-  background-image: url(../public/footer-bg.jpg);
+  background-image: url(/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-around;
@@ -281,6 +308,7 @@ h3 {
     z-index: 1;
 
     img {
+      position: absolute;
       width: 400px;
       z-index: 1;
     }
