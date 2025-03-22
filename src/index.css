@@ -21,6 +21,10 @@ img {
   width: 70%;
 }
 
+.d-flex {
+  display: flex;
+}
+
 /* FLEX */
 .flex-justify-center {
   display: flex;
@@ -195,14 +199,11 @@ img {
   }
 }
 
-.d-flex {
-  display: flex;
-}
-
 .link-container {
   display: flex;
 }
 
+/* FOOTER */
 .section3 {
   display: flex;
   padding-top: 2.5rem;
