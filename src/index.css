@@ -1,39 +1,44 @@
+/* GENERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;;
+  font-family: "Open Sans", sans-serif;
 }
-
-/* HEADER */
 
 header {
-  padding: 10px 0; 
-}
-
-.container {
-  max-width: 1200px; 
-  margin: 0 auto; 
-  display: flex;
-  justify-content: space-around; 
-  align-items: center; 
-}
-
-.width {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
+  padding: 10px 0;
 }
 
 img {
-  width: 80px; 
+  width: 80px;
   height: auto;
-  margin-right: 20px; 
-  }
+  margin-right: 20px;
+}
 
+/* UTILITIES */
+.width-70 {
+  width: 70%;
+}
+
+/* FLEX */
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-alignitems-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* HEADER */
 .top-nav {
-  
   ul {
     list-style: none;
     display: flex;
@@ -43,12 +48,12 @@ img {
   }
 
   li {
-  font-size: 10px;
+    font-size: 10px;
   }
-  
+
   a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
   }
 }
 
@@ -61,31 +66,68 @@ img {
 }
 
 /* MAIN */
-.section1 {
-  display: flex;
-  justify-content: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem; 
-  background-color: black;
-  
 
-  .container1 {
-  width: 70%;
+.section1 {
+  background-color: black;
+}
+.section2 {
+  background-color: #0282f9;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* LIST COMPONENT */
+.ListComponent-container {
+  position: relative;
+  top: -1rem;
   display: flex;
+  flex-direction: column;
   gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
+
+  .ListComponent-title {
+    width: 164px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0282f9;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
   }
 
-  .col-2 {
-    width: calc(((100% / 12)* 2) - 15px);
+  .ListComponent-body {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+
+  .ListComponent-button {
+    span {
+      width: 128px;
+      font-size: 0.5rem;
+      color: white;
+      background-color: #0282f9;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .Card {
+    width: calc(((100% / 12) * 2) - 15px);
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
   }
 
   .img-container {
-  overflow: hidden;
-  aspect-ratio: 1;
+    overflow: hidden;
+    aspect-ratio: 1;
   }
 
   img {
@@ -98,20 +140,14 @@ img {
   }
 }
 
-.section2 {
-  background-color: #0282f9;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .bar {
   background-color: #0282f9;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 70%;
-  margin: auto; 
-  gap: 10px; 
+  margin: auto;
+  gap: 10px;
   flex-wrap: nowrap;
 }
 
@@ -122,37 +158,31 @@ img {
   align-items: center;
 
   img {
-  width: 50px;
-  height: auto;
-  margin-right: 1rem;
+    width: 50px;
+    height: auto;
+    margin-right: 1rem;
   }
 
   span {
-  margin-top: 5px;
-  color: white;
-  font-size: 9px;
-  
+    margin-top: 5px;
+    color: white;
+    font-size: 9px;
   }
 }
 
-
 .main-list {
   color: white;
-
 
   ul {
     list-style: none;
     font-size: 11px;
 
     img {
-      
       width: 40px;
       height: 40px;
       margin-right: 1rem;
     }
   }
-
-
 
   li {
     text-decoration: none;
@@ -165,106 +195,12 @@ img {
   }
 }
 
-/* .footer-links {
-  height: 370px;
-  background-image: url(/footer-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  .col-4 {
-    width: calc((100% / 12) * 4);
-    display: flex;
-  }
-
-  .col-8 {
-    width: calc((100% / 12) * 8);
-  }
-
-  ul {
-    color: #969796;
-    list-style: none; 
-    padding: 0;
-    margin: 0; 
-    display: flex; 
-    flex-direction: column; 
-    gap: 10px; 
-
-    h4 {
-      color: white;
-      font-size: 15px;
-    }
-
-    li {
-      margin-left: 0px;
-      font-size: 10px;
-    }
-  }
-  
-} */
-
-/* .footer-links {
-  height: 370px; 
-  background-image: url(/footer-bg.jpg); 
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  padding: 20px 0;
-}
-
-
-.footer-links .col-4 {
-  width: calc((100% / 12) * 4);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.footer-links .col-8 {
-  width: calc((100% / 12) * 8);
-}
-
-
-.footer-links ul {
-  list-style: none; 
-  padding: 0;
-  margin: 0; 
-  display: flex;
-  flex-direction: column;
-  gap: 10px; 
-}
-
-
-.footer-links h4 {
-  color: white;
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-
-
-.footer-links li a {
-  color: #969796;
-  font-size: 10px;
-  text-decoration: none;
-} */
-
 .d-flex {
   display: flex;
 }
 
 .link-container {
   display: flex;
-  justify-content: space-around;
-}
-
-.sotto-container {
-  display: flex;
-  width: 80%;
- 
 }
 
 .section3 {
@@ -288,9 +224,9 @@ img {
     color: white;
     margin-bottom: 0.5rem;
   }
- .shop {
-      padding-top: 1rem;
-    }
+  .shop {
+    padding-top: 1rem;
+  }
   li {
     list-style: none;
     font-size: 9px;
@@ -305,8 +241,8 @@ img {
   .col-4 {
     width: calc((100% / 12) * 4);
   }
-  .col-7 {
-    width: calc((100% / 12) * 7);
+  .col-8 {
+    width: calc((100% / 12) * 8);
     display: flex;
     margin-top: -6rem;
     margin-bottom: -6rem;
@@ -318,18 +254,13 @@ img {
       width: 400px;
       z-index: 1;
     }
-
-    
   }
-
-
-  
 }
 
 .section4 {
-  background-color: #303030 ;
+  background-color: #303030;
   z-index: 100;
-  
+  position: relative;
 }
 .bottom {
   padding-top: 2rem;
@@ -339,9 +270,6 @@ img {
   justify-content: space-between;
   max-width: 80%;
 
-  .button {
-    padding-left: 2rem;
-  }
   .signup-btn {
     background-color: #303030;
     padding: 0.5rem;
