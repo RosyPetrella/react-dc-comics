@@ -81,6 +81,7 @@ img {
 }
 
 /* LIST COMPONENT */
+
 .ListComponent-container {
   position: relative;
   top: -1rem;
@@ -204,6 +205,7 @@ img {
 }
 
 /* FOOTER */
+
 .section3 {
   display: flex;
   padding-top: 2.5rem;
