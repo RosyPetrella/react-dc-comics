@@ -1,4 +1,37 @@
 export default function Footer() {
+  const footerLinks = {
+    dcComics: [
+      "Characters",
+      "Comics",
+      "Movies",
+      "TV",
+      "Games",
+      "Videos",
+      "News",
+    ],
+    shop: ["Shop DC", "Shop DC Collectibles"],
+    dc: [
+      "Terms Of Use",
+      "Privacy Policy",
+      "Ad Choices",
+      "Advertising",
+      "Jobs",
+      "Subscriptions",
+      "Talent Workshops",
+      "Ratings",
+      "Shop Help",
+      "Contact Us",
+    ],
+    sites: ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"],
+  };
+
+  const socialLinks = [
+    { name: "Facebook", image: "/footer-facebook.png" },
+    { name: "Twitter", image: "/footer-twitter.png" },
+    { name: "YouTube", image: "/footer-youtube.png" },
+    { name: "Pinterest", image: "/footer-pinterest.png" },
+    { name: "Location", image: "/footer-periscope.png" },
+  ];
   return (
     <>
       <section className="section3">
@@ -7,91 +40,39 @@ export default function Footer() {
             <div className="d-flex col1 col-link">
               <ul>
                 <h4>DC COMICS</h4>
-                <li>
-                  <a href="#">Characters</a>
-                </li>
-                <li>
-                  <a href="#">Comics</a>
-                </li>
-                <li>
-                  <a href="#">Movies</a>
-                </li>
-                <li>
-                  <a href="#">TV</a>
-                </li>
-                <li>
-                  <a href="#">Games</a>
-                </li>
-                <li>
-                  <a href="#">Videos</a>
-                </li>
-                <li>
-                  <a href="#">News</a>
-                </li>
+                {footerLinks.dcComics.map((footerLink, index) => (
+                  <li key={index}>
+                    <a href="#">{footerLink}</a>
+                  </li>
+                ))}
               </ul>
               <ul>
                 <h4 className="shop">SHOP</h4>
-                <li>
-                  <a href="#">Shop DC</a>
-                </li>
-                <li>
-                  <a href="#">Shop DC Collectibles</a>
-                </li>
+                {footerLinks.shop.map((linkShop, index) => (
+                  <li key={index}>
+                    <a href="#">{linkShop}</a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="d-flex col-link">
               <ul>
                 <h4>DC</h4>
-                <li>
-                  <a href="#">Terms Of Use</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#">Ad Choices</a>
-                </li>
-                <li>
-                  <a href="#">Advertising</a>
-                </li>
-                <li>
-                  <a href="#">Jobs</a>
-                </li>
-                <li>
-                  <a href="#">Subscriptions</a>
-                </li>
-                <li>
-                  <a href="#">Talent Workshops</a>
-                </li>
-                <li>
-                  <a href="#">Ratings</a>
-                </li>
-                <li>
-                  <a href="#">Shop Help</a>
-                </li>
-                <li>
-                  <a href="#">Contact Us</a>
-                </li>
+                {footerLinks.dc.map((dcLink, index) => (
+                  <li key={index}>
+                    <a href="#">{dcLink}</a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="d-flex col-link">
               <ul>
                 <h4>SITES</h4>
-                <li>
-                  <a href="#">DC</a>
-                </li>
-                <li>
-                  <a href="#">MAD Magazine</a>
-                </li>
-                <li>
-                  <a href="#">DC Kids</a>
-                </li>
-                <li>
-                  <a href="#">DC Universe</a>
-                </li>
-                <li>
-                  <a href="#">DC Power Visa</a>
-                </li>
+                {footerLinks.sites.map((sitesLink, index) => (
+                  <li key={index}>
+                    <a href="#">{sitesLink}</a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
