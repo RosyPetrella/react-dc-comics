@@ -1,10 +1,10 @@
 import ListComponent from "./ListComponent";
-export default function Main() {
+export default function Main({ comicsList }) {
   return (
     <>
       <section className="section1 flex-justify-center">
         <div className="width-70 ">
-          <ListComponent />
+          <ListComponent comicsList={comicsList} />
         </div>
       </section>
       <section className="section2  flex-justify-center">
